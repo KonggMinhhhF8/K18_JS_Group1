@@ -308,33 +308,33 @@ function addCustomer() {
 
 
 
-let editRow = null
-function editCustomer(btn) {
-  editRow = btn.closest('tr')
+// let editRow = null
+// function editCustomer(btn) {
+//   editRow = btn.closest('tr')
 
-  const name = editRow.querySelector('strong').innerText
-  const email = editRow.children[1].childNodes[0].textContent.trim()
-  const phone = editRow.children[1].querySelector('small').innerText
-  const tier = editRow.querySelector('.tier').classList[1]
+//   const name = editRow.querySelector('strong').innerText
+//   const email = editRow.children[1].childNodes[0].textContent.trim()
+//   const phone = editRow.children[1].querySelector('small').innerText
+//   const tier = editRow.querySelector('.tier').classList[1]
 
-  document.getElementById('name').value = name
-  document.getElementById('email').value = email
-  document.getElementById('phone').value = phone
-  document.getElementById('tier').value = tier
+//   document.getElementById('name').value = name
+//   document.getElementById('email').value = email
+//   document.getElementById('phone').value = phone
+//   document.getElementById('tier').value = tier
 
-  openModal()
-}
+//   openModal()
+// }
 
 
-function searchCustomer() {
-  const keyword = document.getElementById('search').value.toLowerCase()
-  const rows = document.querySelectorAll('tbody tr')
+// function searchCustomer() {
+//   const keyword = document.getElementById('search').value.toLowerCase()
+//   const rows = document.querySelectorAll('tbody tr')
 
-  rows.forEach(row => {
-    const text = row.innerText.toLowerCase()
-    row.style.display = text.includes(keyword) ? '' : 'none'
-  })
-}
+//   rows.forEach(row => {
+//     const text = row.innerText.toLowerCase()
+//     row.style.display = text.includes(keyword) ? '' : 'none'
+//   })
+// }
 
 
 
